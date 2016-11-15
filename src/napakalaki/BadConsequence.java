@@ -13,6 +13,7 @@ import java.util.logging.Logger;
  * @author guillermo
  */
 public class BadConsequence {
+    static const int final MAXTREASURES = 10;
     private String text;
     private int levels;
     private int nVisibleTresures;
