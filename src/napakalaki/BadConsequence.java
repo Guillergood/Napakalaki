@@ -41,15 +41,31 @@ public class BadConsequence {
         this.specificHiddenTreasures = tHidden;
     }
     
+    public boolean isEmpty(){
+        
+    }
+    
+    public void substractVisibleTreasure(Treasure t){
+        
+    }
+    public void substractHiddenTreasure(Treasure t){
+        
+    }
+    
+    public BadConsequence adjustToFitTreasureLists(ArrayList<Treasure> v, 
+            ArrayList<Treasure> v){
+        
+    }
+    
     public String getText(){
         return (text);
     }
     
-    public int getVisibleTresures(){
+    public int getNVisibleTresures(){
         return(nVisibleTresures);
     }
     
-    public int getHiddenTresures(){
+    public int getNHiddenTresures(){
         return(nHiddenTresures);
     }
     
@@ -61,11 +77,11 @@ public class BadConsequence {
         return(death);
     }
     
-    public ArrayList<TreasureKind> getHiddenTreasures(){
+    public ArrayList<TreasureKind> getSpecificHiddenTreasures(){
         return(specificHiddenTreasures);
     }
     
-    public ArrayList<TreasureKind> getVisibleTreasures(){
+    public ArrayList<TreasureKind> getSpecificVisibleTreasures(){
         return(specificVisibleTreasures);
     }    
 
