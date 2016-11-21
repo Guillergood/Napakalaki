@@ -7,11 +7,9 @@ package napakalaki;
 
 /**
  *
- * @author guillermo
+ * @author Guillermo & enrique
  */
 public class Prize {
-    
-    
     private int treasures;
     private int level;
     

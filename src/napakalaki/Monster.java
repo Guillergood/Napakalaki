@@ -7,7 +7,7 @@ package napakalaki;
 
 /**
  *
- * @author guillermo
+ * @author Guillermo & enrique
  */
 public class Monster {
     private String name;
@@ -38,15 +38,14 @@ public class Monster {
     public BadConsequence getBadConsequence(){
         return(bc);
     }
-    
-    public int getLevelsGained(){
-        
-    }
-    
-    public int getTreasuresGained(){
-        
-    }
 
+   public int getLevelGained(){
+       return prize.getLevel();
+   }
+   public int getTreasuresGained(){
+       return prize.getTreasures();
+   }
+    
     @Override
     public String toString() {
         return "Monster{" + "name = " + name + 

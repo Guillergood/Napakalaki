@@ -6,10 +6,14 @@
 package napakalaki;
 
 import java.util.ArrayList;
+import napakalaki.CombatResult;
+import napakalaki.Monster;
+import napakalaki.Player;
+import napakalaki.Treasure;
 
 /**
  *
- * @author Guillermo
+ * @author Guillermo & enrique
  */
 public class Napakalaki {
     private static Napakalaki instance = null;
@@ -29,7 +33,7 @@ public class Napakalaki {
             createInstance();
         return instance;
     }
-    
+  /*  
     private void initPlayers (ArrayList<String> names){
         
     }
@@ -82,5 +86,5 @@ public class Napakalaki {
         
     }
 
-
+    */
 }

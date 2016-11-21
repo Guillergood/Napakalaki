@@ -7,8 +7,9 @@ package napakalaki;
 
 /**
  *
- * @author Guillermo
+ * @author Guillermo & enrique
  */
 public enum CombatResult {
-    WINGAME,WIN,LOSE;
+    WINGAME, WIN, LOSE;
+    
 }

@@ -7,14 +7,13 @@ package napakalaki;
 
 /**
  *
- * @author Guillermo
+ * @author Guillermo & enrique
  */
 public class Dice {
     
     private static Dice instance = null;
     
     private Dice(){
-        
     }
     
     private synchronized static void createInstance() {
@@ -29,7 +28,7 @@ public class Dice {
         return instance;
     }
     
-    int nextNumber(){
-        
+    public int nextNumber() {
+        return (int) Math.random()*6 + 1;
     }
 }

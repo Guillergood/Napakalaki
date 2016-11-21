@@ -6,18 +6,17 @@
 package napakalaki;
 
 import java.util.ArrayList;
-import java.util.logging.Logger;
 
 /**
  *
- * @author guillermo
+ * @author Guillermo & enrique
  */
 public class BadConsequence {
     private static final int MAXTREASURES = 10;
     private String text;
     private int levels;
-    private int nVisibleTresures;
-    private int nHiddenTresures;
+    private int nVisibleTreasures;
+    private int nHiddenTreasures;
     private boolean death;
     private ArrayList<TreasureKind> specificHiddenTreasures = new ArrayList();
     private ArrayList<TreasureKind> specificVisibleTreasures = new ArrayList();
@@ -25,8 +24,8 @@ public class BadConsequence {
     public BadConsequence(String text, int levels, int nVisible, int nHidden){
         this.text = text;
         this.levels = levels;
-        this.nVisibleTresures = nVisible;
-        this.nHiddenTresures = nHidden;
+        this.nVisibleTreasures = nVisible;
+        this.nHiddenTreasures = nHidden;
     }
     
     public BadConsequence(String text, boolean death){
@@ -42,11 +41,7 @@ public class BadConsequence {
         this.specificHiddenTreasures = tHidden;
     }
     
-    public boolean isEmpty(){
-        
-    }
-    
-    public void substractVisibleTreasure(Treasure t){
+    /*public void substractVisibleTreasure(Treasure t){
         
     }
     public void substractHiddenTreasure(Treasure t){
@@ -54,20 +49,16 @@ public class BadConsequence {
     }
     
     public BadConsequence adjustToFitTreasureLists(ArrayList<Treasure> v, 
-            ArrayList<Treasure> v){
+            ArrayList<Treasure> h) {
         
+    }*/
+    
+    public int getVisibleTreasures(){
+        return(nVisibleTreasures);
     }
     
-    public String getText(){
-        return (text);
-    }
-    
-    public int getNVisibleTresures(){
-        return(nVisibleTresures);
-    }
-    
-    public int getNHiddenTresures(){
-        return(nHiddenTresures);
+    public int getHiddenTreasures(){
+        return(nHiddenTreasures);
     }
     
     public int getLevels(){
@@ -85,16 +76,26 @@ public class BadConsequence {
     public ArrayList<TreasureKind> getSpecificVisibleTreasures(){
         return(specificVisibleTreasures);
     }    
+    
+    public String getText(){
+        return (text);
+    } 
 
+    public boolean isEmpty() {
+        
+        return(nVisibleTreasures == 0 && nHiddenTreasures == 0
+            && specificVisibleTreasures.isEmpty() 
+            && specificHiddenTreasures.isEmpty());
+    }
+    
     @Override
     public String toString() {
         return "BadConsequence{" + "text=" + text + ", levels=" + levels + 
-                ", nVisibleTresures=" + nVisibleTresures + 
-                ", nHiddenTresures=" + nHiddenTresures + 
+                ", nVisibleTreasures=" + nVisibleTreasures + 
+                ", nHiddenTreasures=" + nHiddenTreasures + 
                 ", death=" + death + 
                 ", specificHiddenTreasures=" + specificHiddenTreasures + 
                 ", specificVisibleTreasures=" + specificVisibleTreasures + '}';
     }
-    
     
 }
